@@ -4,16 +4,15 @@
 
 
 
-# def recursion_function(i,n):
+def recursion_function(n):
     
-#     if i == n:      
-#         return
+    if n < 1:      
+        return
     
-#     print("abhijeet")
-#    #i += 1
-#     recursion_function(i+1,n)
+    print("abhijeet")
+    recursion_function(n-1)
     
-# print(recursion_function(0,10))
+print(recursion_function(10))
 
 
 # Q.2 - print linearly from n to 1
