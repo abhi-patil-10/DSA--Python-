@@ -1,5 +1,5 @@
 # Given two integers N1 and N2, find their greatest common divisor.
-
+# bruteforce approach 
 def gcd(n1,n2):
     
     gcd = 0
