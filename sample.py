@@ -1,9 +1,7 @@
-import numpy as np
+import numpy
 
-m , n = map(int,input("Enter the number of rows and columns : ").split())
-temp = []
-for i in range(m):
-    row = list(map(int,input("Enter row element :").split()))
-    temp.append(row)
-    
-print(temp)
+N = int(input())
+A = numpy.array([list(map(float,input().split()))])
+ans = numpy.linalg.det(A)
+print(round(ans,2))
+# print(ans)

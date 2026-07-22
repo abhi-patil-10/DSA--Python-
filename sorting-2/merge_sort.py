@@ -22,7 +22,7 @@ class solution:
         for i in range(low,high+1):
             arr[i] = temp[i-low]
             
-    def mergesort(self,arr,low,high):
+    def mergesort(self,arr,low,high):        
         if low>=high:
             return
         
