@@ -11,5 +11,4 @@ def removedup(arr):
 
 arr = [1,1,1,2,2,2,3,4,4,5]
 print(removedup(arr))     
-n = len(removedup(arr))
-print(n)       
+
