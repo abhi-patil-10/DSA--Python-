@@ -27,8 +27,8 @@
 
 # optimal approach
 def second_largest(arr):
-    large = -1
-    second_large = -1
+    large = float('-inf')
+    second_large = float('-inf')
     for i in range(len(arr)):
         if arr[i]>large:
             second_large = large
@@ -39,8 +39,8 @@ def second_largest(arr):
     return second_large
 
 def second_smallest(arr):
-    small = float('inf')
-    second_small = float('inf')
+    small = float('inf')#maximum interger value
+    second_small = float('inf')#maximum interger value
     for i in range(len(arr)):
         if arr[i]<small:
             second_small = small
