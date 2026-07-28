@@ -1,3 +1,5 @@
+# left rotation by k elements
+
 #brute force 
 # def rotate(arr,k):
 #     temp = []
@@ -27,6 +29,7 @@ def left_rotate(arr,k):
     reverse(arr,0,k-1)
     reverse(arr,k,len(arr)-1)
     reverse(arr,0,len(arr)-1)
+   
     
     
     return arr
