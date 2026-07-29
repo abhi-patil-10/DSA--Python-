@@ -167,5 +167,57 @@
 # #     print(i)
 # print(result)
 
+# N = 3
+# list = []
+# for i in range(N):
+#     operations = input().lower().split()
+#     if operations[0] == 'insert':
+#         list.insert(int(operations[1]),int(operations[2]))
+    
+#     elif operations[0] == 'remove':
+#         list.remove(int(operations[1]))
+    
+#     elif operations[0] == 'append':
+#         list.append(int(operations[1]))
+        
+#     elif operations[0] == 'sort':
+#         list.sort()
+        
+#     elif operations[0] == 'pop':
+#         list.pop()
+        
+#     elif operations[0] == 'reverse':
+#         list.reverse()
+        
+#     elif operations[0] == 'print':
+#         print(list)
+#         break
 
-for i in 
+arr1 = [1,1,1,1,1,1,2,2,3,4,5,6,7]
+arr2 = [1,1,1,2,10]
+
+# temp = []
+# temp.append(arr1[0])
+# for i in range(1,len(arr1)):
+    
+#     if arr1[i] != arr1[i-1]:
+#         temp.append(arr1[i])
+    
+    
+# # print(arr1[len(arr1)-1])       
+        
+# for i in range(len(arr2)):
+#     if arr2[i] > arr1[len(arr1)-1]:
+#         temp.insert(len(temp),arr2[i])
+
+# print(temp)
+
+union = set()
+for i in range(len(arr1)):
+    union.add(arr1[i])
+
+for i in range(len(arr2)):
+    
+    union.add(arr2[i])
+    
+print(list(union))
