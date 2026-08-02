@@ -30,15 +30,25 @@
 
 
 # using hashing (dictionary)
-arr = [1,1,2,2,3,3,4,5,5]
-freq = {}
+# arr = [1,1,2,2,3,3,4,5,5]
+# freq = {}
 
-for i in arr:
-    if i in freq:
-        freq[i] += 1
-    else:
-        freq[i] = 1
+# for i in arr:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
     
-for i in range(1,len(freq)+1):
-    if freq[i] == 1:
-        print(i)
+# for i in range(1,len(freq)+1):
+#     if freq[i] == 1:
+#         print(i )
+
+
+
+# optimal solution using xor 
+arr = [4,1,2,1,2]
+ans = 0
+for i in range(len(arr)):
+    ans = ans ^ arr[i]
+    
+print(ans)

@@ -212,12 +212,37 @@ arr2 = [1,1,1,2,10]
 
 # print(temp)
 
-union = set()
-for i in range(len(arr1)):
-    union.add(arr1[i])
+# union = set()
+# for i in range(len(arr1)):
+#     union.add(arr1[i])
 
-for i in range(len(arr2)):
+# for i in range(len(arr2)):
     
-    union.add(arr2[i])
+#     union.add(arr2[i])
     
-print(list(union))
+# print(list(union))
+
+
+# STDIN       Function
+# -----       --------
+# 4           set a size M = 4
+# 2 4 5 9     a = {2, 4, 5, 9}
+# 4           set b size N = 4
+# 2 4 11 12   b = {2, 4, 11, 12}
+
+# n = int(input())
+# arr1 = set(map(int,input()))
+# m = int(input())
+# arr2 = set(map(int,input()))
+# temp = set()
+
+# i,j = 0
+# while i<=n and j <=m:
+#     if arr1[i] == arr2[j]:
+#         i+=1
+#         j+=1
+#     else:
+#         temp.add(i)
+#         temp.add(j)
+    
+#     print(temp)
