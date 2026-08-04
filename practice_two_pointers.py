@@ -81,10 +81,58 @@
 # print(arr)
 
 # remove duplicate from sorted array
-arr = [1,1,2,3,3,3,4]
-i=0
-for j in range(i+1,len(arr)):
-    if arr[j] != arr[i]:
-        arr[i+1] = arr[j]
-        i+=1
-print(arr[:i+1])
+# arr = [1,1,2,3,3,3,4]
+# i=0
+# for j in range(i+1,len(arr)):
+#     if arr[j] != arr[i]:
+#         arr[i+1] = arr[j]
+#         i+=1
+# print(arr[:i+1])
+
+#merge two sorted array
+# arr1 = [1,4,7,10]
+# arr2 = [5,6]
+
+# i=0
+# j=0
+# temp = []
+# while i<len(arr1) and j<len(arr2):
+#     if arr1[i]<arr2[j]:
+#         temp.append(arr1[i])
+#         i+=1
+#     elif arr1[i] > arr2[j]:
+#         temp.append(arr2[j])
+#         j+=1
+#     else:
+#         temp.append(arr1[i])
+#         temp.append(arr2[j])
+#         i+=1
+#         j+=1
+        
+# while i < len(arr1):
+#     temp.append(arr1[i])
+#     i+=1
+
+# while j < len(arr2):
+#     temp.append(arr2[j])
+#     j+=1
+    
+# print(temp)
+
+
+# 7. Two Sum II – Input Array Is Sorted:
+#     Find two numbers whose sum equals the target.
+
+arr = [3,3]
+target = 6
+def two_sum(arr,target):
+    
+    sum = 0
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if i != j:
+                sum = arr[i]+arr[j]
+            if sum == target:
+                return i,j
+        
+print(two_sum(arr,target))
