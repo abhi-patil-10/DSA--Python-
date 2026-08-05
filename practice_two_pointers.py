@@ -123,16 +123,24 @@
 # 7. Two Sum II – Input Array Is Sorted:
 #     Find two numbers whose sum equals the target.
 
-arr = [3,3]
-target = 6
-def two_sum(arr,target):
+# arr = [3,3]
+# target = 6
+# def two_sum(arr,target):
     
-    sum = 0
-    for i in range(len(arr)):
-        for j in range(len(arr)):
-            if i != j:
-                sum = arr[i]+arr[j]
-            if sum == target:
-                return i,j
+#     sum = 0
+#     for i in range(len(arr)):
+#         for j in range(len(arr)):
+#             if i != j:
+#                 sum = arr[i]+arr[j]
+#             if sum == target:
+#                 return i,j
         
-print(two_sum(arr,target))
+# print(two_sum(arr,target))
+
+#squares of sorted array:
+arr= [1,2,3,4]
+# i=0
+# while i<len(arr):
+#     arr[i] = arr[i]*2
+#     i+=1
+# print(arr)
