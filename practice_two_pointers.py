@@ -138,9 +138,11 @@
 # print(two_sum(arr,target))
 
 #squares of sorted array:
-arr= [1,2,3,4]
-# i=0
-# while i<len(arr):
-#     arr[i] = arr[i]*2
-#     i+=1
-# print(arr)
+arr= [-4,-1,0,3,10]
+i=0
+while i<len(arr):
+    arr[i] = arr[i]**2
+    i+=1
+    
+sorted_arr = sorted(arr)
+print(sorted_arr)
